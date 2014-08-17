@@ -49,6 +49,10 @@ public class RadioPacket4BS extends RadioPacket {
     public void setDb1(byte db1) {
         this.db1 = db1;
     }
+    
+    public void setDb2(byte db2) {
+        this.db2 = db2;
+    }
 
     public boolean isTeachInMode() {
         return !Bits.isBitSet(db0, 3);
